@@ -1,0 +1,29 @@
+app = "my-sendy-app"
+primary_region = "sea"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  PHP_MEMORY_LIMIT = "256M"
+
+[http_service]
+  internal_port = 80
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '4gb'
+  cpu_kind = 'performance'
+  cpus = 2
+
+[mounts]
+  source = 'sendy_sessions'
+  destination = '/data'
+
+[[volumes]]
+  name = 'sendy_sessions'
+  size = '2gb'

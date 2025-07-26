@@ -1,0 +1,12 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "toc": "markdown-toc --maxdepth 3 -i README.md",
+    "version": "npm run toc && auto-changelog -p --template keepachangelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md README.md",
+    "postversion": "git push --follow-tags"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "markdown-toc": "^1.2.0"
+  }
+}
