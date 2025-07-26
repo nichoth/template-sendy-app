@@ -8,7 +8,25 @@ This uses a [Github Action](./.github/workflows/deploy.yml) to deploy
 the site to fly.io on any push to the main branch.
 
 <details><summary><h2>Contents</h2></summary>
+
 <!-- toc -->
+
+- [Use](#use)
+- [Configure things](#configure-things)
+  * [Set env vars](#set-env-vars)
+  * [Install Fly.io helpers](#install-flyio-helpers)
+  * [Install Sendy](#install-sendy)
+  * [Configure Sendy](#configure-sendy)
+- [Database](#database)
+  * [Create](#create)
+  * [Get the environment variables](#get-the-environment-variables)
+- [Initialize Fly app](#initialize-fly-app)
+  * [DNS](#dns)
+  * [Setup [AWS SES](https://console.aws.amazon.com/ses/)](#setup-aws-seshttpsconsoleawsamazoncomses)
+- [API Integration Example](#api-integration-example)
+
+<!-- tocstop -->
+
 </details>
 
 ## Use
