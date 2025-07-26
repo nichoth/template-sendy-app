@@ -22,7 +22,7 @@ the site to fly.io on any push to the main branch.
   * [Get the environment variables](#get-the-environment-variables)
 - [Initialize Fly app](#initialize-fly-app)
   * [DNS](#dns)
-  * [Setup [AWS SES](https://console.aws.amazon.com/ses/)](#setup-aws-seshttpsconsoleawsamazoncomses)
+  * [Setup AWS SES](#setup-aws-ses)
 - [API Integration Example](#api-integration-example)
 
 <!-- tocstop -->
@@ -179,7 +179,9 @@ Sendy app on Fly, e.g.
 newsletter.my-domain.com -> my-sendy-app.fly.dev
 ```
 
-### Setup [AWS SES](https://console.aws.amazon.com/ses/)
+### Setup AWS SES
+
+See the [AWS SES dashboard](https://console.aws.amazon.com/ses/).
 
 #### Add these things
 
