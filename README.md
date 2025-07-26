@@ -115,15 +115,6 @@ php_flag display_errors off
 php_value error_reporting 30711
 ```
 
-[Optional] Extend the session timeout to 1 week:
-
-```
-# Extend PHP session timeout to match login cookie duration (1 week)
-php_value session.gc_maxlifetime 604800
-php_value session.cookie_lifetime 604800
-php_value session.cache_expire 10080
-```
-
 
 -------
 
