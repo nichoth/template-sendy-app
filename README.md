@@ -40,6 +40,10 @@ the site to fly.io on any push to the main branch.
    ```sh
    mv README.example.md README.md
    ```
+3. Rename `_github` to `.github` for automatic deployments to Fly.
+   ```bash
+   mv _github .github
+   ```
 
 ## Configure things
 
