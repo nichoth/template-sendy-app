@@ -12,6 +12,12 @@ RUN apt-get update && apt-get install -y \
 # Enable Apache modules for performance
 RUN a2enmod rewrite headers expires deflate
 
+# security
+RUN apt-get update && apt-get install -y libapache2-mod-security2
+COPY ./modsecurity.conf /etc/apache2/conf-available/modsecurity.conf
+RUN a2enconf modsecurity
+
+
 # ✅ Allow .htaccess to override PHP settings
 RUN sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
 
